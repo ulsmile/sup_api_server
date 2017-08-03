@@ -1,0 +1,11 @@
+
+
+/.bundle
+*.swp
+
+/supapi/log/*
+/supapi/tmp/*
+!/supapi/log/.keep
+!/supapi/tmp/.keep
+/mongodata/*
+.mongodata

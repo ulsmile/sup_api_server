@@ -1,0 +1,18 @@
+version: '2'
+services:
+    db:
+        image: mongo
+        ports:
+            - "27017:27017"
+        volumes: 
+            - ./mongodata:/data/db
+    web:
+        build: . 
+#        image: sivertigo/webapp
+        command: ["rails","server","-p","3001","-b","0.0.0.0"]
+        volumes:
+            - ./supapi:/myapp
+        ports:
+            - "3001:3001"
+        links:
+            - db
