@@ -11,5 +11,5 @@ class Record
   field :wind_speed
   field :weather
   field :temparature
-  embedded_in :players
+  embedded_in :player
 end

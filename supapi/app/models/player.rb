@@ -4,7 +4,7 @@ class Player
   field :player_id
   field :_id, type: String, default: -> { player_id }
   field :line_id
-  field :name, type: String, :default => unknown
+  field :name, type: String
   field :gender
   field :hp_permission, type: Boolean
   field :ranking_permission, type: Boolean
